@@ -13,13 +13,13 @@ import swaggerUi from 'swagger-ui-express';
 //configure env
 dotenv.config();
 
-//databse config
+//database config
 connectDB();
 
 //rest object
 const app = express();
 
-//middelwares
+//middlewares
 app.use(cors());
 app.use(express.json());
 app.use(morgan("dev"));
